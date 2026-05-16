@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="signup.css">
+    <style>
+      
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Join US</h1>
+        <form action="/login" method="post">
+            <input type="text" name="user" placeholder="full name" >
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="password" placeholder="confirm Password" required>
+
+            <div>
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+            </div>
+           <input type="submit" value="Sign-up">
+        </form>
+    </div>
+</body>
+</html>
