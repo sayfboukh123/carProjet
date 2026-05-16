@@ -32,7 +32,7 @@ pipeline {
       steps {
         script {
           def scannerHome = tool 'MySonarScanner'
-          withSonarQubeEnv('projet') {
+          withSonarQubeEnv('Projet') {
             withCredentials([string(credentialsId: 'sonarqube', variable: 'TOKEN')]) {
               bat "\"${scannerHome}\\bin\\sonar-scanner.bat\" " +
                 "-Dsonar.projectKey=carProjet " +
